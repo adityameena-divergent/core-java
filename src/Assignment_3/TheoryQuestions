@@ -36,10 +36,10 @@
 - String literals stored in string constant pool.
 
 11. What is String interning?
-- String
+- String interning is a method of storing only one copy of each distinct string value, and then reusing them.
 
 12. How can you intern a String Object?
-- We can intern an object using intern() method.
+- We can intern string object by calling intern() method.
 
 13. What happens when you store a new String literal value that is already present in the string pool?
 - The new variable will also point that memory. It will not create separate memory.
@@ -96,8 +96,15 @@
 
 
 29. What are Unicode characters?
+- Unicode is internation set of characters that represent all of the characters found in human languages.
+- The range of character in java from 0 to 65535
+
 30. What are the advantages of using Unicode characters?
+- It is useful to represent character in java.
+
 31. What were the problems with old encoding systems?
+- Because old encoding system uses char[] array to store data, while new encoding system uses byte[] to store data, and char takes more memory as compare to byte, byte takes only 1 byte of memory, because most of the character generally used are comes in ASCII.
+
 
 Try following VM arugements
 -XX:+PrintFlagsFinal    -XX:+PrintStringTableStatistics   -XX:StringTableSize=4901
