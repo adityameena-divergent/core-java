@@ -1,0 +1,14 @@
+1.Why you shouldn't use equality operator to compare float values?
+Because the smallest rounding error will cause two floating point numbers to not be equal.
+
+
+2.What is the preferred way to compare two float values?
+Float are useful when you need fractional value, it is not preferred to use in large values.
+
+
+3.What should be the criteria to define range value that should be used to compare two float values?
+Up to 1-3 precision digit number would be best for compare two floating value. We can use suffix for compare two float number.
+
+
+4.What is the use of strictfp?
+It is a keyword in java, and it is used to ensure the portability of floating point number after calculation.
