@@ -61,13 +61,11 @@ public class PermutationOfString {
             for(int j = 0; j < str.length(); j++) {
 
                 str = swapChar(str, i, j);
-                set.add(str);
+                System.out.println(str);
                 str = swapChar(str, i, j);
 
             }
-
         }
-
     }
 
 
@@ -76,12 +74,11 @@ public class PermutationOfString {
 
         Scanner sc = new Scanner(System.in);
 
-//        String s = sc.nextLine();
+        String s = sc.nextLine();
 
-//        permutation(s, 0, s.length() - 1);
+        permutation(s, 0, s.length() - 1);
 
-        permutationItr("abc");
-        System.out.println(set.size());
+        permutationItr(s);
 
     }
 }

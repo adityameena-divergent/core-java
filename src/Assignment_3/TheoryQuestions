@@ -16,7 +16,7 @@
 -
 
 6. What memory optimization is performed by the Java environment for Strings?
-- For String literal it will not create separate memory for both the refence variable if both have equal value.
+- For String literal it will not create separate memory for both the reference variable if both have equal value.
 - Both will points to same memory.
 
 7. Why you don't have to calculate hash-code of the String object every time it's used?
@@ -24,6 +24,7 @@
 
 8. What is String literal?
 - Those object that are created without using new keyword are String literal.
+- Example :- String str = "Welcome";
 
 9. What are the differences between String Literal and String Object?
 - String Literal creates only one object.
@@ -48,7 +49,7 @@
 -
 
 15. Which one is preferred: String Object or String Literal? Why?
--
+- String literal preferred because string literal point to object that stores in string pool, pool does not store duplicate value. bacause of that different object point to same memory in pool if value is same.
 
 16. Explain String Pool Memory Management?
 - String constant pool is part of heap and it contains only unique strings, if any unreferenced string is present in pool then it is collected by garbage collector.
@@ -106,7 +107,7 @@
 - Because old encoding system uses char[] array to store data, while new encoding system uses byte[] to store data, and char takes more memory as compare to byte, byte takes only 1 byte of memory, because most of the character generally used are comes in ASCII.
 
 
-Try following VM arugements
+Try following VM arguments
 -XX:+PrintFlagsFinal    -XX:+PrintStringTableStatistics   -XX:StringTableSize=4901
 
 32. What is automatic intern in terms of Strings.
