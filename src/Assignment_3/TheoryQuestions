@@ -13,14 +13,15 @@
 - If any thread try to update the object then it will not update the value but it will create new memory, original memory will remain same as before.
 
 5. What are the advantages of declaring the String class final?
--
+- Making the class final prevents subclasses that could break these string.
+- It makes the string remain immutable.
 
 6. What memory optimization is performed by the Java environment for Strings?
 - For String literal it will not create separate memory for both the reference variable if both have equal value.
 - Both will points to same memory.
 
 7. Why you don't have to calculate hash-code of the String object every time it's used?
--
+- hashCode() method of Object class returns the memory of object in integer form, that why we don't need to do any calculation.
 
 8. What is String literal?
 - Those object that are created without using new keyword are String literal.
@@ -46,7 +47,7 @@
 - The new variable will also point that memory. It will not create separate memory.
 
 14. What are the drawbacks of creating large number of String literals?
--
+- Beacause pool has limited size.
 
 15. Which one is preferred: String Object or String Literal? Why?
 - String literal preferred because string literal point to object that stores in string pool, pool does not store duplicate value. bacause of that different object point to same memory in pool if value is same.
@@ -55,6 +56,8 @@
 - String constant pool is part of heap and it contains only unique strings, if any unreferenced string is present in pool then it is collected by garbage collector.
 
 17. How are String Literals stored in memory?
+- String literals store on heap area in a separate memory known as String constant pool.
+
 
 18. How String Pool is optimized for memory?
 - Pool is optimized for memory because it store only unique string value, example :- Suppose, if we have two String literal with same value then both reference variable points to same memory.
@@ -111,3 +114,4 @@ Try following VM arguments
 -XX:+PrintFlagsFinal    -XX:+PrintStringTableStatistics   -XX:StringTableSize=4901
 
 32. What is automatic intern in terms of Strings.
+- When create string object using string literal then reference variable by default point to pool area, that why it is called automatic string interning.
