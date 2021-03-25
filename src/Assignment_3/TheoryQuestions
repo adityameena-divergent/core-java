@@ -115,3 +115,5 @@ Try following VM arguments
 
 32. What is automatic intern in terms of Strings.
 - When create string object using string literal then reference variable by default point to pool area, that why it is called automatic string interning.
+
+
