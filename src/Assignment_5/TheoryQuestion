@@ -1,0 +1,43 @@
+1. When should the private methods be used in a class?
+- It is useful where we perform operations on sensitive data.
+  e.g. - Database operation code.
+
+2. Do we need encapsulation for constants?
+- We don't need encapsulation for constants because no one can change or update constants.
+
+3. What are two benefits of using the Factory methods?
+- It prevent the direct creation of object
+
+4. Overloading is compile time or runtime?
+- It is compile time.
+
+5. What are the three ways of initializing instance variables?
+- Using instance block
+- Using constructor
+
+6. What is constructor chaining, write a program to show it.
+- Constructor chaining is a process of calling a constructor from another constructor.
+- For constructor chaining, the first statement of constructor should this() for calling another constructor of same class, and super() for for calling constructor for parent class
+
+7. Use a non-static initialization block to show its use.
+- It is same as constructor but it calls every when object is created even if object is created by different parameter constructor.
+- Instance block calls before constructor.
+
+8. Use a static initialization block to show its use.
+- Static block calls only once during the loading of class.
+
+9. Why "finalize" method is deprecated?
+- finalize method calls before when object is destroy, it is deprecated because of unnecessary behavior, it does not calls always when object destroy.
+
+10. What is the proper way of naming a package in java, show using an example.
+- Package name should be written in lower case.
+- <domain name in reverse order> . <module name> . <application name>
+
+11. What is a "import static".
+- With static import we don't need specify class name before using content(method, variable), We can directly write method name or variable name.
+
+12. What are the various class design guidelines.
+- If class has to many responsibilities then break it into multiple classes
+- Data should be private
+- name of class or method should be reflect to their role.
+- number of lines in method should not be more than 35-40 lines.
